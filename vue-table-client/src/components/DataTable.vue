@@ -65,7 +65,29 @@
       </el-table-column>
     </el-table>
 
-    <edit-dialog :show="editShow" title="编辑学习计划" @close="closeEditDialog" @save="saveTodo"></edit-dialog>
+    <!-- 对话框 -->
+    <edit-dialog :show="editShow" title="编辑学习计划" @close="closeEditDialog" @save="saveTodo">
+      <!-- 学习内容表单 -->
+      <el-form :model="currentTodo" ref="todoEditForm">
+        <el-form-item label="学习书籍" prop="name" required>
+          <el-input v-model="currentTodo.name"></el-input>
+        </el-form-item>
+
+        <el-form-item label="书籍作者" prop="author">
+          <el-tag v-for="author in currentAuthors" :key="author" closable @close="removeAuthor(author)">{{ author }}</el-tag>
+          <span @keyup.enter="addAuthor"><el-input v-model="currentAuthor"></el-input></span>
+          <el-button type="primary" size="small" icon="el-icon-plus" @click="addAuthor">添加作者</el-button>
+        </el-form-item>
+
+        <el-form-item label="书籍内容" prop="content" required>
+          <el-input v-model="currentTodo.content" type="textarea"></el-input>
+        </el-form-item>
+
+        <el-form-item label="完成时间" prop="completeDate" required>
+          <el-date-picker v-model="currentTodo.completeDate" type="date"></el-date-picker>
+        </el-form-item>
+      </el-form>
+    </edit-dialog>
 
     <el-pagination :total="total" :current-page="currentPage" :page-size="currentPageSize" :page-sizes="[3, 5]"
         layout="total, sizes, prev, pager, next, jumper"
@@ -94,7 +116,10 @@ export default {
       sortOrder: '',
       currentPage: 1,
       currentPageSize: 3,
-      editShow: false
+      editShow: false,
+      currentTodo: {},
+      currentAuthors: ['作者1', '作者2'],
+      currentAuthor: ''
     }
   },
   mounted () {
@@ -122,13 +147,43 @@ export default {
       this.currentPage = page
     },
     addTodo () {
+      this.currentTodo = {}
       this.editShow = true
     },
     saveTodo () {
-      this.closeEditDialog()
+      this.$refs.todoEditForm.validate((valid) => {
+        if (valid) {
+          this.currentTodo.author = this.currentAuthors
+          alert(JSON.stringify(this.currentTodo))
+          this.currentTodo._id ? this.editAjax() : this.addAjax()
+        }
+      })
     },
     closeEditDialog () {
+      this.currentTodo = {}
+      this.currentAuthors = []
+      this.currentAuthor = ''
+      this.$refs.todoEditForm.resetFields()
       this.editShow = false
+    },
+    addAjax () {
+      this.$ajax.post('todos', this.currentTodo).then((res) => {
+        if (res.data) this.data.push(res.data)
+        this.closeEditDialog()
+      }).catch((err) => this.$notify({
+        type: 'error',
+        message: err
+      }))
+    },
+    editAjax () {
+      this.closeEditDialog()
+    },
+    addAuthor () {
+      this.currentAuthors.push(this.currentAuthor)
+      this.currentAuthor = ''
+    },
+    removeAuthor (author) {
+      this.currentAuthors.splice(this.currentAuthors.indexOf(author), 1)
     }
   },
   computed: {
