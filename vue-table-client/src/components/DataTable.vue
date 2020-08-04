@@ -24,7 +24,7 @@
     <!-- 右按钮区 -->
     <template slot="right-field">
       <el-button type="primary" icon="el-icon-refresh">刷新</el-button>
-      <el-button type="warning" icon="el-icon-upload2">导入</el-button>
+      <el-button type="warning" icon="el-icon-upload2" @click="uploadTodo()">导入</el-button>
       <el-button type="success" icon="el-icon-download" @click="downloadTodos()">导出</el-button>
     </template>
 
@@ -71,7 +71,7 @@
       </el-table-column>
     </el-table>
 
-    <!-- 对话框 -->
+    <!-- 新增和编辑对话框 -->
     <edit-dialog :show="editShow" title="编辑学习计划" @close="closeEditDialog" @save="saveTodo">
       <!-- 学习内容表单 -->
       <el-form :model="currentTodo" ref="todoEditForm">
@@ -94,6 +94,16 @@
         </el-form-item>
       </el-form>
     </edit-dialog>
+
+    <!-- 上传文件对话框 -->
+    <el-dialog title="上传文件" :visible.sync="uploadShow">
+      <el-upload :action="uploadUrl" :on-success="uploadSuccess">
+        <el-button type="primary" icon="el-icon-upload">上传</el-button>
+      </el-upload>
+      <span slot="footer">
+        <el-button type="danger" icon="el-icon-close" @click="uploadShow=false">关闭</el-button>
+      </span>
+    </el-dialog>
 
     <el-pagination :total="total" :current-page="currentPage" :page-size="currentPageSize" :page-sizes="[3, 10]"
         layout="total, sizes, prev, pager, next, jumper"
@@ -125,7 +135,8 @@ export default {
       editShow: false,
       currentTodo: {},
       currentAuthors: ['作者1', '作者2'],
-      currentAuthor: ''
+      currentAuthor: '',
+      uploadShow: false
     }
   },
   mounted () {
@@ -249,6 +260,17 @@ export default {
         type: 'error',
         message: err
       }))
+    },
+    uploadTodo () {
+      this.uploadShow = true
+    },
+    uploadSuccess (res) {
+      this.$notify({
+        type: 'success',
+        message: res
+      })
+      this.update()
+      this.uploadShow = false
     }
   },
   computed: {
@@ -290,6 +312,9 @@ export default {
     },
     pagedData () {
       return this.sortedData.slice((this.currentPage - 1) * this.currentPageSize, this.currentPage * this.currentPageSize)
+    },
+    uploadUrl () {
+      return `${this.$ajax.defaults.baseURL}todos/upload`
     }
   }
 }
