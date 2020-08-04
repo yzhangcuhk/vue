@@ -25,7 +25,7 @@
     <template slot="right-field">
       <el-button type="primary" icon="el-icon-refresh">刷新</el-button>
       <el-button type="warning" icon="el-icon-upload2">导入</el-button>
-      <el-button type="success" icon="el-icon-download">导出</el-button>
+      <el-button type="success" icon="el-icon-download" @click="downloadTodos()">导出</el-button>
     </template>
 
     <!-- 表格区 -->
@@ -224,6 +224,27 @@ export default {
             this.data.splice(index, 1)
           }
         })
+      }).catch((err) => this.$notify({
+        type: 'error',
+        message: err
+      }))
+    },
+    downloadTodos () {
+      this.$ajax({
+        method: 'post',
+        url: 'todos/download',
+        responseType: 'blob',
+        data: this.filtedData
+      }).then((res) => {
+        var blob = new Blob([res.data], {type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;charset=utf-8'})
+        var downloadElement = document.createElement('a')
+        var href = window.URL.createObjectURL(blob)
+        downloadElement.href = href
+        downloadElement.download = '导出列表.xlsx'
+        document.body.appendChild(downloadElement)
+        downloadElement.click()
+        document.body.removeChild(downloadElement)
+        window.URL.revokeObjectURL(href)
       }).catch((err) => this.$notify({
         type: 'error',
         message: err
