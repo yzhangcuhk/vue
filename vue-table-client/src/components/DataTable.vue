@@ -23,9 +23,9 @@
 
     <!-- 右按钮区 -->
     <template slot="right-field">
-      <el-button type="primary" icon="el-icon-refresh">刷新</el-button>
-      <el-button type="warning" icon="el-icon-upload2" @click="uploadTodo()">导入</el-button>
-      <el-button type="success" icon="el-icon-download" @click="downloadTodos()">导出</el-button>
+      <el-button type="primary" icon="el-icon-refresh" @click="update">刷新</el-button>
+      <el-button type="warning" icon="el-icon-upload2" @click="uploadTodo">导入</el-button>
+      <el-button type="success" icon="el-icon-download" @click="downloadTodos">导出</el-button>
     </template>
 
     <!-- 表格区 -->
