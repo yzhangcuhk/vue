@@ -2,7 +2,7 @@
   <view-page>
     <!-- 左按钮区 -->
     <template slot="left-field">
-      <el-button type="danger" icon="el-icon-circle-plus-outline">添加</el-button>
+      <el-button type="danger" icon="el-icon-circle-plus-outline" @click="addTodo">添加</el-button>
     </template>
 
     <!-- 搜索框 -->
@@ -65,6 +65,8 @@
       </el-table-column>
     </el-table>
 
+    <edit-dialog :show="editShow" title="编辑学习计划" @close="closeEditDialog" @save="saveTodo"></edit-dialog>
+
     <el-pagination :total="total" :current-page="currentPage" :page-size="currentPageSize" :page-sizes="[3, 5]"
         layout="total, sizes, prev, pager, next, jumper"
         @size-change="pageSizeChange" @current-change="pageChange">
@@ -74,9 +76,11 @@
 
 <script>
 import ViewPage from './ViewPage'
+import EditDialog from './EditDialog'
 export default {
   components: {
-    ViewPage
+    ViewPage,
+    EditDialog
   },
   data () {
     return {
@@ -89,7 +93,8 @@ export default {
       sortProp: '',
       sortOrder: '',
       currentPage: 1,
-      currentPageSize: 3
+      currentPageSize: 3,
+      editShow: false
     }
   },
   mounted () {
@@ -115,6 +120,15 @@ export default {
     },
     pageChange (page) {
       this.currentPage = page
+    },
+    addTodo () {
+      this.editShow = true
+    },
+    saveTodo () {
+      this.closeEditDialog()
+    },
+    closeEditDialog () {
+      this.editShow = false
     }
   },
   computed: {
