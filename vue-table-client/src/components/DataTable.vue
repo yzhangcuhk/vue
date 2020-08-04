@@ -59,8 +59,14 @@
 
       <el-table-column label="操作">
         <template slot-scope="scope">
-          <el-button size="small" type="warning" icon="el-icon-edit"></el-button>
-          <el-button size="small" type="danger" icon="el-icon-delete"></el-button>
+          <!-- 启动学习计划 -->
+          <el-button v-if="scope.row.status === 0 || scope.row.status === 2" @click="updateStatusAjax(scope.row, 1)" size="small" type="primary" icon="el-icon-arrow-right"></el-button>
+          <!-- 搁置学习计划 -->
+          <el-button v-if="scope.row.status === 1" @click="updateStatusAjax(scope.row, 2)" size="small" type="info" icon="el-icon-loading"></el-button>
+          <!-- 完成学习计划 -->
+          <el-button v-if="scope.row.status === 1" @click="updateStatusAjax(scope.row, 3)" size="small" type="success" icon="el-icon-check"></el-button>
+          <el-button size="small" type="warning" icon="el-icon-edit" @click="editTodo(scope.row)"></el-button>
+          <el-button size="small" type="danger" icon="el-icon-delete" @click="removeTodoAjax(scope.row)"></el-button>
         </template>
       </el-table-column>
     </el-table>
@@ -89,7 +95,7 @@
       </el-form>
     </edit-dialog>
 
-    <el-pagination :total="total" :current-page="currentPage" :page-size="currentPageSize" :page-sizes="[3, 5]"
+    <el-pagination :total="total" :current-page="currentPage" :page-size="currentPageSize" :page-sizes="[3, 10]"
         layout="total, sizes, prev, pager, next, jumper"
         @size-change="pageSizeChange" @current-change="pageChange">
     </el-pagination>
@@ -154,7 +160,6 @@ export default {
       this.$refs.todoEditForm.validate((valid) => {
         if (valid) {
           this.currentTodo.author = this.currentAuthors
-          alert(JSON.stringify(this.currentTodo))
           this.currentTodo._id ? this.editAjax() : this.addAjax()
         }
       })
@@ -176,7 +181,16 @@ export default {
       }))
     },
     editAjax () {
-      this.closeEditDialog()
+      this.$ajax.put('todos/' + this.currentTodo._id, this.currentTodo).then((res) => {
+        if (res.data) {
+          var index = this.data.findIndex(item => item.id === res.data._id)
+          this.data.splice(index, 1, res.data)
+        }
+        this.closeEditDialog()
+      }).catch((err) => this.$notify({
+        type: 'error',
+        message: err
+      }))
     },
     addAuthor () {
       this.currentAuthors.push(this.currentAuthor)
@@ -184,6 +198,36 @@ export default {
     },
     removeAuthor (author) {
       this.currentAuthors.splice(this.currentAuthors.indexOf(author), 1)
+    },
+    editTodo (row) {
+      this.currentTodo = JSON.parse(JSON.stringify(row))
+      this.currentAuthors = this.currentTodo.author
+      this.editShow = true
+    },
+    updateStatusAjax (row, status) {
+      var todo = {_id: row._id, status}
+      this.$ajax.put('todos/' + todo._id, todo).then((res) => {
+        if (res.data) {
+          var index = this.data.findIndex(item => item._id === res.data._id)
+          this.data.splice(index, 1, res.data)
+        }
+      }).catch((err) => this.$notify({
+        type: 'error',
+        message: err
+      }))
+    },
+    removeTodoAjax (row) {
+      this.$confirm('确定要删除?').then(() => {
+        this.$ajax.delete('todos/' + row._id).then((res) => {
+          if (res.data) {
+            var index = this.data.findIndex(item => item._id === res.data._id)
+            this.data.splice(index, 1)
+          }
+        })
+      }).catch((err) => this.$notify({
+        type: 'error',
+        message: err
+      }))
     }
   },
   computed: {
