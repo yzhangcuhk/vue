@@ -7770,3 +7770,51 @@ org.springframework.web.HttpRequestMethodNotSupportedException: Request method '
 2020-08-06 18:13:13.163 [http-nio-9090-exec-7] DEBUG com.vue.adminserver.mapper.SysUserMapper.selectOne - ==> Parameters: admin(String), 123456(String), 0(Integer)
 2020-08-06 18:13:13.169 [http-nio-9090-exec-7] DEBUG com.vue.adminserver.mapper.SysUserMapper.selectOne - <==      Total: 1
 2020-08-06 18:13:13.169 [http-nio-9090-exec-7] DEBUG com.vue.adminserver.mapper.SysUserMapper.selectOne - <==      Total: 1
+2020-08-06 18:21:32.403 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-06 18:21:32.403 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-08-06 18:21:32.413 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-08-06 18:21:42.853 [main] INFO  com.vue.adminserver.AdminServerApplication - Starting AdminServerApplication on DESKTOP-NEGHJBV with PID 25164 (D:\workspaces\vue_workspaces\vue\admin-server\target\classes started by asheng in D:\workspaces\vue_workspaces\vue\admin-server)
+2020-08-06 18:21:42.853 [main] INFO  com.vue.adminserver.AdminServerApplication - Starting AdminServerApplication on DESKTOP-NEGHJBV with PID 25164 (D:\workspaces\vue_workspaces\vue\admin-server\target\classes started by asheng in D:\workspaces\vue_workspaces\vue\admin-server)
+2020-08-06 18:21:42.858 [main] DEBUG com.vue.adminserver.AdminServerApplication - Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-08-06 18:21:42.858 [main] DEBUG com.vue.adminserver.AdminServerApplication - Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-08-06 18:21:42.858 [main] INFO  com.vue.adminserver.AdminServerApplication - No active profile set, falling back to default profiles: default
+2020-08-06 18:21:42.858 [main] INFO  com.vue.adminserver.AdminServerApplication - No active profile set, falling back to default profiles: default
+2020-08-06 18:21:44.063 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2020-08-06 18:21:44.072 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2020-08-06 18:21:44.072 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-08-06 18:21:44.073 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-06 18:21:44.181 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-08-06 18:21:44.181 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1234 ms
+2020-08-06 18:21:44.279 [main] DEBUG c.v.a.global.config.mybatis.MyBatisPlusConfig - 注册分页插件
+2020-08-06 18:21:44.279 [main] DEBUG c.v.a.global.config.mybatis.MyBatisPlusConfig - 注册分页插件
+2020-08-06 18:21:44.774 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-06 18:21:44.969 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2020-08-06 18:21:44.995 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2020-08-06 18:21:45.007 [main] INFO  com.vue.adminserver.AdminServerApplication - Started AdminServerApplication in 2.605 seconds (JVM running for 6.042)
+2020-08-06 18:21:45.007 [main] INFO  com.vue.adminserver.AdminServerApplication - Started AdminServerApplication in 2.605 seconds (JVM running for 6.042)
+2020-08-06 18:21:45.327 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-06 18:21:45.328 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-08-06 18:21:45.336 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2020-08-06 18:21:45.513 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-08-06 18:21:47.363 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-08-06 18:21:47.371 [http-nio-9090-exec-1] DEBUG com.vue.adminserver.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT id,gmt_modified,password,is_deleted,login_name,name,gmt_create,status FROM sys_user WHERE (login_name = ? AND password = ? AND is_deleted = ?) 
+2020-08-06 18:21:47.371 [http-nio-9090-exec-1] DEBUG com.vue.adminserver.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT id,gmt_modified,password,is_deleted,login_name,name,gmt_create,status FROM sys_user WHERE (login_name = ? AND password = ? AND is_deleted = ?) 
+2020-08-06 18:21:47.391 [http-nio-9090-exec-1] DEBUG com.vue.adminserver.mapper.SysUserMapper.selectOne - ==> Parameters: admin(String), 123456(String), 0(Integer)
+2020-08-06 18:21:47.391 [http-nio-9090-exec-1] DEBUG com.vue.adminserver.mapper.SysUserMapper.selectOne - ==> Parameters: admin(String), 123456(String), 0(Integer)
+2020-08-06 18:21:47.414 [http-nio-9090-exec-1] DEBUG com.vue.adminserver.mapper.SysUserMapper.selectOne - <==      Total: 1
+2020-08-06 18:21:47.414 [http-nio-9090-exec-1] DEBUG com.vue.adminserver.mapper.SysUserMapper.selectOne - <==      Total: 1
+2020-08-06 18:21:53.024 [http-nio-9090-exec-2] DEBUG com.vue.adminserver.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT id,gmt_modified,password,is_deleted,login_name,name,gmt_create,status FROM sys_user WHERE (login_name = ? AND password = ? AND is_deleted = ?) 
+2020-08-06 18:21:53.024 [http-nio-9090-exec-2] DEBUG com.vue.adminserver.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT id,gmt_modified,password,is_deleted,login_name,name,gmt_create,status FROM sys_user WHERE (login_name = ? AND password = ? AND is_deleted = ?) 
+2020-08-06 18:21:53.025 [http-nio-9090-exec-2] DEBUG com.vue.adminserver.mapper.SysUserMapper.selectOne - ==> Parameters: admin(String), 123456(String), 0(Integer)
+2020-08-06 18:21:53.025 [http-nio-9090-exec-2] DEBUG com.vue.adminserver.mapper.SysUserMapper.selectOne - ==> Parameters: admin(String), 123456(String), 0(Integer)
+2020-08-06 18:21:53.027 [http-nio-9090-exec-2] DEBUG com.vue.adminserver.mapper.SysUserMapper.selectOne - <==      Total: 1
+2020-08-06 18:21:53.027 [http-nio-9090-exec-2] DEBUG com.vue.adminserver.mapper.SysUserMapper.selectOne - <==      Total: 1
+2020-08-06 18:21:57.613 [http-nio-9090-exec-3] DEBUG com.vue.adminserver.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT id,gmt_modified,password,is_deleted,login_name,name,gmt_create,status FROM sys_user WHERE (login_name = ? AND password = ? AND is_deleted = ?) 
+2020-08-06 18:21:57.613 [http-nio-9090-exec-3] DEBUG com.vue.adminserver.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT id,gmt_modified,password,is_deleted,login_name,name,gmt_create,status FROM sys_user WHERE (login_name = ? AND password = ? AND is_deleted = ?) 
+2020-08-06 18:21:57.613 [http-nio-9090-exec-3] DEBUG com.vue.adminserver.mapper.SysUserMapper.selectOne - ==> Parameters: admin(String), 123456(String), 0(Integer)
+2020-08-06 18:21:57.613 [http-nio-9090-exec-3] DEBUG com.vue.adminserver.mapper.SysUserMapper.selectOne - ==> Parameters: admin(String), 123456(String), 0(Integer)
+2020-08-06 18:21:57.615 [http-nio-9090-exec-3] DEBUG com.vue.adminserver.mapper.SysUserMapper.selectOne - <==      Total: 1
+2020-08-06 18:21:57.615 [http-nio-9090-exec-3] DEBUG com.vue.adminserver.mapper.SysUserMapper.selectOne - <==      Total: 1
+2020-08-06 18:22:02.305 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-06 18:22:02.306 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-08-06 18:22:02.310 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

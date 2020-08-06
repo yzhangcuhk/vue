@@ -45,12 +45,12 @@ public class SysUser extends Model<SysUser> {
     /**
      * 状态（0：正常，1：注销，2：冻结）
      */
-    private Boolean status;
+    private Integer status;
 
     /**
      * 是否删除（0：正常，1：删除）
      */
-    private Boolean isDeleted;
+    private Integer isDeleted;
 
     /**
      * 创建时间

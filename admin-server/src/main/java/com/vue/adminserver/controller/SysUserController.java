@@ -6,6 +6,7 @@ import com.vue.adminserver.domain.entity.SysUser;
 import com.vue.adminserver.global.ResponseResult;
 import com.vue.adminserver.global.constant.Constant;
 import com.vue.adminserver.global.enums.BusinessEnum;
+import com.vue.adminserver.global.enums.UserStatusEnum;
 import com.vue.adminserver.global.enums.YesNoEnum;
 import com.vue.adminserver.global.util.StringUtil;
 import com.vue.adminserver.service.SysUserService;
@@ -48,6 +49,13 @@ public class SysUserController {
         if (Objects.isNull(existUser)) {
             return ResponseResult.error(BusinessEnum.LOGIN_NAME_OR_PASSWORD_ERROR);
         }
+
+        if (existUser.getStatus().intValue() == UserStatusEnum.CANCEL.getStatus()) {
+            return ResponseResult.error(BusinessEnum.USER_CANCEL);
+        } else if (existUser.getStatus().intValue() == UserStatusEnum.FROZEN.getStatus()) {
+            return ResponseResult.error(BusinessEnum.USER_FROZEN);
+        }
+
         return ResponseResult.success();
     }
 
