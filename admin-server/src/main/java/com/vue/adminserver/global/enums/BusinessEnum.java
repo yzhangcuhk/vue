@@ -12,6 +12,9 @@ public enum BusinessEnum {
 
     USER_NOT_EXIST(401, "用户不存在"),
     MOBILE_EXIST(402, "该手机号已存在"),
+    LOGIN_NAME_OR_PASSWORD_ERROR(403, "用户名或密码错误"),
+    LOGIN_NAME_IS_EMPTY(404, "用户名不能为空"),
+    PASSWORD_IS_EMPTY(405, "密码不能为空"),
     ;
     private Integer code;
     private String desc;

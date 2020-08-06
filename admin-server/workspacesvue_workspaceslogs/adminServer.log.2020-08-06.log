@@ -7588,3 +7588,185 @@ Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL synta
 2020-08-06 17:48:56.808 [http-nio-9090-exec-2] DEBUG com.vue.adminserver.mapper.UserMapper.updateById - ==> Parameters: 2020-08-06T17:29:31(LocalDateTime), 123457(String), 0(Integer), 18988880008(String), 王凯1(String), 2020-08-06T17:29:31(LocalDateTime), (String), 0(Integer), 8(Long)
 2020-08-06 17:48:56.951 [http-nio-9090-exec-2] DEBUG com.vue.adminserver.mapper.UserMapper.updateById - <==    Updates: 1
 2020-08-06 17:48:56.951 [http-nio-9090-exec-2] DEBUG com.vue.adminserver.mapper.UserMapper.updateById - <==    Updates: 1
+2020-08-06 18:00:08.889 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-06 18:00:08.890 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-08-06 18:00:08.903 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-08-06 18:02:52.333 [main] INFO  com.vue.adminserver.AdminServerApplication - Starting AdminServerApplication on DESKTOP-NEGHJBV with PID 16452 (D:\workspaces\vue_workspaces\vue\admin-server\target\classes started by asheng in D:\workspaces\vue_workspaces\vue\admin-server)
+2020-08-06 18:02:52.333 [main] INFO  com.vue.adminserver.AdminServerApplication - Starting AdminServerApplication on DESKTOP-NEGHJBV with PID 16452 (D:\workspaces\vue_workspaces\vue\admin-server\target\classes started by asheng in D:\workspaces\vue_workspaces\vue\admin-server)
+2020-08-06 18:02:52.335 [main] DEBUG com.vue.adminserver.AdminServerApplication - Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-08-06 18:02:52.335 [main] DEBUG com.vue.adminserver.AdminServerApplication - Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-08-06 18:02:52.336 [main] INFO  com.vue.adminserver.AdminServerApplication - No active profile set, falling back to default profiles: default
+2020-08-06 18:02:52.336 [main] INFO  com.vue.adminserver.AdminServerApplication - No active profile set, falling back to default profiles: default
+2020-08-06 18:02:53.353 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2020-08-06 18:02:53.359 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2020-08-06 18:02:53.360 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-08-06 18:02:53.360 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-06 18:02:53.539 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-08-06 18:02:53.540 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1157 ms
+2020-08-06 18:02:53.691 [main] DEBUG c.v.a.global.config.mybatis.MyBatisPlusConfig - 注册分页插件
+2020-08-06 18:02:53.691 [main] DEBUG c.v.a.global.config.mybatis.MyBatisPlusConfig - 注册分页插件
+2020-08-06 18:02:54.835 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-06 18:02:55.074 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2020-08-06 18:02:55.105 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2020-08-06 18:02:55.123 [main] INFO  com.vue.adminserver.AdminServerApplication - Started AdminServerApplication in 3.153 seconds (JVM running for 5.361)
+2020-08-06 18:02:55.123 [main] INFO  com.vue.adminserver.AdminServerApplication - Started AdminServerApplication in 3.153 seconds (JVM running for 5.361)
+2020-08-06 18:08:23.375 [main] INFO  com.vue.adminserver.AdminServerApplication - Starting AdminServerApplication on DESKTOP-NEGHJBV with PID 22940 (D:\workspaces\vue_workspaces\vue\admin-server\target\classes started by asheng in D:\workspaces\vue_workspaces\vue\admin-server)
+2020-08-06 18:08:23.375 [main] INFO  com.vue.adminserver.AdminServerApplication - Starting AdminServerApplication on DESKTOP-NEGHJBV with PID 22940 (D:\workspaces\vue_workspaces\vue\admin-server\target\classes started by asheng in D:\workspaces\vue_workspaces\vue\admin-server)
+2020-08-06 18:08:23.379 [main] DEBUG com.vue.adminserver.AdminServerApplication - Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-08-06 18:08:23.379 [main] DEBUG com.vue.adminserver.AdminServerApplication - Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-08-06 18:08:23.380 [main] INFO  com.vue.adminserver.AdminServerApplication - No active profile set, falling back to default profiles: default
+2020-08-06 18:08:23.380 [main] INFO  com.vue.adminserver.AdminServerApplication - No active profile set, falling back to default profiles: default
+2020-08-06 18:08:25.465 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2020-08-06 18:08:25.473 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2020-08-06 18:08:25.474 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-08-06 18:08:25.474 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-06 18:08:25.583 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-08-06 18:08:25.583 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2139 ms
+2020-08-06 18:08:25.722 [main] DEBUG c.v.a.global.config.mybatis.MyBatisPlusConfig - 注册分页插件
+2020-08-06 18:08:25.722 [main] DEBUG c.v.a.global.config.mybatis.MyBatisPlusConfig - 注册分页插件
+2020-08-06 18:08:26.510 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-06 18:08:26.929 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2020-08-06 18:08:26.959 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2020-08-06 18:08:26.969 [main] INFO  com.vue.adminserver.AdminServerApplication - Started AdminServerApplication in 4.19 seconds (JVM running for 7.167)
+2020-08-06 18:08:26.969 [main] INFO  com.vue.adminserver.AdminServerApplication - Started AdminServerApplication in 4.19 seconds (JVM running for 7.167)
+2020-08-06 18:11:45.519 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-06 18:11:56.129 [main] INFO  com.vue.adminserver.AdminServerApplication - Starting AdminServerApplication on DESKTOP-NEGHJBV with PID 11828 (D:\workspaces\vue_workspaces\vue\admin-server\target\classes started by asheng in D:\workspaces\vue_workspaces\vue\admin-server)
+2020-08-06 18:11:56.129 [main] INFO  com.vue.adminserver.AdminServerApplication - Starting AdminServerApplication on DESKTOP-NEGHJBV with PID 11828 (D:\workspaces\vue_workspaces\vue\admin-server\target\classes started by asheng in D:\workspaces\vue_workspaces\vue\admin-server)
+2020-08-06 18:11:56.133 [main] DEBUG com.vue.adminserver.AdminServerApplication - Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-08-06 18:11:56.133 [main] DEBUG com.vue.adminserver.AdminServerApplication - Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-08-06 18:11:56.133 [main] INFO  com.vue.adminserver.AdminServerApplication - No active profile set, falling back to default profiles: default
+2020-08-06 18:11:56.133 [main] INFO  com.vue.adminserver.AdminServerApplication - No active profile set, falling back to default profiles: default
+2020-08-06 18:11:57.193 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2020-08-06 18:11:57.201 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2020-08-06 18:11:57.202 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-08-06 18:11:57.202 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-06 18:11:57.313 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-08-06 18:11:57.313 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1115 ms
+2020-08-06 18:11:57.412 [main] DEBUG c.v.a.global.config.mybatis.MyBatisPlusConfig - 注册分页插件
+2020-08-06 18:11:57.412 [main] DEBUG c.v.a.global.config.mybatis.MyBatisPlusConfig - 注册分页插件
+2020-08-06 18:11:57.934 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-06 18:11:58.128 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2020-08-06 18:11:58.151 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2020-08-06 18:11:58.160 [main] INFO  com.vue.adminserver.AdminServerApplication - Started AdminServerApplication in 2.483 seconds (JVM running for 5.83)
+2020-08-06 18:11:58.160 [main] INFO  com.vue.adminserver.AdminServerApplication - Started AdminServerApplication in 2.483 seconds (JVM running for 5.83)
+2020-08-06 18:12:46.903 [http-nio-9090-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-06 18:12:46.903 [http-nio-9090-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-08-06 18:12:46.908 [http-nio-9090-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2020-08-06 18:12:46.924 [http-nio-9090-exec-2] ERROR c.v.a.global.exception.GlobalExceptionHandler - Request method 'PUT' not supported
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:213)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:422)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:367)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:110)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:59)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:395)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1234)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1016)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-08-06 18:12:46.924 [http-nio-9090-exec-2] ERROR c.v.a.global.exception.GlobalExceptionHandler - Request method 'PUT' not supported
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:213)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:422)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:367)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:110)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:59)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:395)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1234)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1016)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-08-06 18:12:52.163 [http-nio-9090-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-08-06 18:12:53.672 [http-nio-9090-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-08-06 18:12:53.681 [http-nio-9090-exec-3] DEBUG com.vue.adminserver.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT id,gmt_modified,password,is_deleted,login_name,name,gmt_create,status FROM sys_user WHERE (login_name = ? AND password = ? AND is_deleted = ?) 
+2020-08-06 18:12:53.681 [http-nio-9090-exec-3] DEBUG com.vue.adminserver.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT id,gmt_modified,password,is_deleted,login_name,name,gmt_create,status FROM sys_user WHERE (login_name = ? AND password = ? AND is_deleted = ?) 
+2020-08-06 18:12:53.701 [http-nio-9090-exec-3] DEBUG com.vue.adminserver.mapper.SysUserMapper.selectOne - ==> Parameters: 王凯1(String), 123457(String), 0(Integer)
+2020-08-06 18:12:53.701 [http-nio-9090-exec-3] DEBUG com.vue.adminserver.mapper.SysUserMapper.selectOne - ==> Parameters: 王凯1(String), 123457(String), 0(Integer)
+2020-08-06 18:12:53.720 [http-nio-9090-exec-3] DEBUG com.vue.adminserver.mapper.SysUserMapper.selectOne - <==      Total: 0
+2020-08-06 18:12:53.720 [http-nio-9090-exec-3] DEBUG com.vue.adminserver.mapper.SysUserMapper.selectOne - <==      Total: 0
+2020-08-06 18:13:05.072 [http-nio-9090-exec-5] DEBUG com.vue.adminserver.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT id,gmt_modified,password,is_deleted,login_name,name,gmt_create,status FROM sys_user WHERE (login_name = ? AND password = ? AND is_deleted = ?) 
+2020-08-06 18:13:05.072 [http-nio-9090-exec-5] DEBUG com.vue.adminserver.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT id,gmt_modified,password,is_deleted,login_name,name,gmt_create,status FROM sys_user WHERE (login_name = ? AND password = ? AND is_deleted = ?) 
+2020-08-06 18:13:05.073 [http-nio-9090-exec-5] DEBUG com.vue.adminserver.mapper.SysUserMapper.selectOne - ==> Parameters: admin(String), 123457(String), 0(Integer)
+2020-08-06 18:13:05.073 [http-nio-9090-exec-5] DEBUG com.vue.adminserver.mapper.SysUserMapper.selectOne - ==> Parameters: admin(String), 123457(String), 0(Integer)
+2020-08-06 18:13:05.075 [http-nio-9090-exec-5] DEBUG com.vue.adminserver.mapper.SysUserMapper.selectOne - <==      Total: 0
+2020-08-06 18:13:05.075 [http-nio-9090-exec-5] DEBUG com.vue.adminserver.mapper.SysUserMapper.selectOne - <==      Total: 0
+2020-08-06 18:13:13.162 [http-nio-9090-exec-7] DEBUG com.vue.adminserver.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT id,gmt_modified,password,is_deleted,login_name,name,gmt_create,status FROM sys_user WHERE (login_name = ? AND password = ? AND is_deleted = ?) 
+2020-08-06 18:13:13.162 [http-nio-9090-exec-7] DEBUG com.vue.adminserver.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT id,gmt_modified,password,is_deleted,login_name,name,gmt_create,status FROM sys_user WHERE (login_name = ? AND password = ? AND is_deleted = ?) 
+2020-08-06 18:13:13.163 [http-nio-9090-exec-7] DEBUG com.vue.adminserver.mapper.SysUserMapper.selectOne - ==> Parameters: admin(String), 123456(String), 0(Integer)
+2020-08-06 18:13:13.163 [http-nio-9090-exec-7] DEBUG com.vue.adminserver.mapper.SysUserMapper.selectOne - ==> Parameters: admin(String), 123456(String), 0(Integer)
+2020-08-06 18:13:13.169 [http-nio-9090-exec-7] DEBUG com.vue.adminserver.mapper.SysUserMapper.selectOne - <==      Total: 1
+2020-08-06 18:13:13.169 [http-nio-9090-exec-7] DEBUG com.vue.adminserver.mapper.SysUserMapper.selectOne - <==      Total: 1
