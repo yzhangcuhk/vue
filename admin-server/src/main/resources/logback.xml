@@ -48,7 +48,7 @@
         </encoder>
     </appender>
 
-    <logger name="com.vue.adminserver">
+    <logger name="com.vue.adminserver" additivity="false">
         <level value="DEBUG" />
         <!-- appender-ref 可选节点。作用：指定日志输出某个appender，如果没有指定，则不输出。 -->
         <appender-ref ref="STDOUT" />
@@ -56,6 +56,7 @@
     </logger>
 
 
+    <!-- root的作用是收集下面所有反馈上来的信息流并根据配置在root中appender进行输出。如果在looger中配置了additivity="false"，则不会反馈到root中。 -->
     <!-- 日志输出级别 -->
     <root level="INFO">
         <appender-ref ref="STDOUT" />
