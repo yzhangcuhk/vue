@@ -10,12 +10,12 @@ import java.util.Objects;
  * @Date 2020-08-06 14:27
  * @Description
  **/
-public class ResponseResult {
+public class ResponseResult<T> {
     private Integer code;
     private String errorMsg;
-    private Object data;
+    private T data;
 
-    public ResponseResult(Integer code, String errorMsg, Object data) {
+    public ResponseResult(Integer code, String errorMsg, T data) {
         this.code = code;
         this.errorMsg = errorMsg;
         this.data = data;
@@ -69,7 +69,7 @@ public class ResponseResult {
         return data;
     }
 
-    public void setData(Object data) {
+    public void setData(T data) {
         this.data = data;
     }
 }

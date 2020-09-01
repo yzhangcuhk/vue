@@ -19,12 +19,11 @@ import java.util.List;
 import java.util.Objects;
 
 /**
- * <p>
- * 用户 前端控制器
- * </p>
+ * 用户
  *
  * @author caishaodong
  * @since 2020-08-06
+ * @description 用户
  */
 @RestController
 @RequestMapping("/user")
@@ -121,7 +120,7 @@ public class UserController {
      * @return
      */
     @GetMapping("/getById/{id}")
-    public ResponseResult getById(@PathVariable(value = "id") Integer id) {
+    public ResponseResult<User> getById(@PathVariable(value = "id") Integer id) {
         User user = userService.getOne(new QueryWrapper<User>()
                 .eq(Constant.ID, id)
                 .eq(Constant.IS_DELETED, YesNoEnum.NO.getValue()));
@@ -137,7 +136,7 @@ public class UserController {
      * @return
      */
     @GetMapping("/getList")
-    public ResponseResult getList() {
+    public ResponseResult<User> getList() {
         List<User> list = userService.list(new QueryWrapper<User>()
                 .eq(Constant.IS_DELETED, YesNoEnum.NO.getValue()));
         return ResponseResult.success(list);
@@ -149,7 +148,7 @@ public class UserController {
      * @return
      */
     @GetMapping("/getListPage")
-    public ResponseResult getListPage() {
+    public ResponseResult<User> getListPage() {
         PageUtil<User> pageUtil = new PageUtil<>();
         IPage<User> page = userService.page(pageUtil, new QueryWrapper<User>()
                 .eq(Constant.IS_DELETED, YesNoEnum.NO.getValue()));

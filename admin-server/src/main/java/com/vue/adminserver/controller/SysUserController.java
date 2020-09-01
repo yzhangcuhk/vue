@@ -19,9 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Objects;
 
 /**
- * <p>
- * 系统用户 前端控制器
- * </p>
+ * 系统用户
  *
  * @author caishaodong
  * @since 2020-08-06
@@ -33,6 +31,11 @@ public class SysUserController {
     @Autowired
     private SysUserService sysUserService;
 
+    /**
+     * 登录
+     * @param sysUser
+     * @return
+     */
     @PostMapping("/login")
     public ResponseResult login(@RequestBody SysUser sysUser) {
         String loginName = sysUser.getLoginName();
