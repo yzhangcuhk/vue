@@ -148,7 +148,7 @@ public class UserController {
      * @return
      */
     @GetMapping("/getListPage")
-    public ResponseResult<User> getListPage() {
+    public ResponseResult<PageUtil<User>> getListPage() {
         PageUtil<User> pageUtil = new PageUtil<>();
         IPage<User> page = userService.page(pageUtil, new QueryWrapper<User>()
                 .eq(Constant.IS_DELETED, YesNoEnum.NO.getValue()));
