@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ResponseResult</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+<link href="../style.css" rel="stylesheet" />
+</head>
+<body onload="PR.prettyPrint()">
+<pre class="prettyprint lang-java">
+public class ResponseResult implements Serializable{
+
+    private int code; //
+    private String errorMsg; //
+    private User data; //
+
+    public int getCode(){
+        return code;
+    }
+
+    public void setCode(int code){
+        this.code = code;
+    }
+
+    public String getErrorMsg(){
+        return errorMsg;
+    }
+
+    public void setErrorMsg(String errorMsg){
+        this.errorMsg = errorMsg;
+    }
+
+    public User getData(){
+        return data;
+    }
+
+    public void setData(User data){
+        this.data = data;
+    }
+
+}
+</pre>
+
+
+<pre class="prettyprint lang-java">
+public class User implements Serializable{
+
+    private unknow log; //
+    private long id; //
+    private String name; //姓名
+    private String mobile; //手机号
+    private String email; //邮箱
+    private String password; //密码
+    private int age; //年龄
+    private String address; //住址
+    private int status; //状态（0：正常，1：注销，2：冻结）
+    private int isDeleted; //是否删除（0：正常，1：删除）
+    private String gmtCreate; //创建时间
+    private String gmtModified; //修改时间
+
+    public unknow getLog(){
+        return log;
+    }
+
+    public void setLog(unknow log){
+        this.log = log;
+    }
+
+    public long getId(){
+        return id;
+    }
+
+    public void setId(long id){
+        this.id = id;
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public String getMobile(){
+        return mobile;
+    }
+
+    public void setMobile(String mobile){
+        this.mobile = mobile;
+    }
+
+    public String getEmail(){
+        return email;
+    }
+
+    public void setEmail(String email){
+        this.email = email;
+    }
+
+    public String getPassword(){
+        return password;
+    }
+
+    public void setPassword(String password){
+        this.password = password;
+    }
+
+    public int getAge(){
+        return age;
+    }
+
+    public void setAge(int age){
+        this.age = age;
+    }
+
+    public String getAddress(){
+        return address;
+    }
+
+    public void setAddress(String address){
+        this.address = address;
+    }
+
+    public int getStatus(){
+        return status;
+    }
+
+    public void setStatus(int status){
+        this.status = status;
+    }
+
+    public int getIsDeleted(){
+        return isDeleted;
+    }
+
+    public void setIsDeleted(int isDeleted){
+        this.isDeleted = isDeleted;
+    }
+
+    public String getGmtCreate(){
+        return gmtCreate;
+    }
+
+    public void setGmtCreate(String gmtCreate){
+        this.gmtCreate = gmtCreate;
+    }
+
+    public String getGmtModified(){
+        return gmtModified;
+    }
+
+    public void setGmtModified(String gmtModified){
+        this.gmtModified = gmtModified;
+    }
+
+}
+</pre>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+</body>
+</html>
