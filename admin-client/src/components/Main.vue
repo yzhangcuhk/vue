@@ -69,10 +69,10 @@
                 <i class="el-icon-menu"></i>
                 <span>导航五</span>
               </template>
-              <el-menu-item index="41">
+              <el-menu-item index="51">
                 <span>菜单51</span>
               </el-menu-item>
-              <el-menu-item index="42">
+              <el-menu-item index="52">
                 <span>菜单52</span>
               </el-menu-item>
             </el-submenu>

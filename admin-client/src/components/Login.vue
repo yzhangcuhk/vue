@@ -33,8 +33,8 @@ export default {
     login () {
       this.$refs.loginForm.validate(valid => {
         if (valid) {
-          alert(this.user.loginName)
-          alert(this.user.password)
+          alert("userName: " + this.user.loginName + ", password: " + this.user.password)
+          window.open(this.GlOBAL + 'index','_self');
         } else {
           return false
         }
