@@ -1,13 +1,9 @@
-<template>
-</template>
-
 <script>
 const themeColor = '#409EFF'
-const serverUrl = "http://127.0.0.1:8080/#/";
+const clientUrl = 'http://localhost:8080/'
 
 export default {
-  themeColor
+  themeColor,
+  clientUrl
 }
 </script>
-
-
